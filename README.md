@@ -1,7 +1,7 @@
 # VisioFinancialServices
 
 # Instructions
-**# Actual Idea is to store all Rules in Custom Meta Type in Salesforce, Which will allow users to manupulate configuration. (I have added a commented section on how it will be with Custom meta data).
+**# Actual Idea is to store all Rules in Custom Meta Type in Salesforce, Which will allow users to add \ change configuration. (I have added a commented section on how it will be with Custom meta data).
 **# Just for our easy execution of the code (rule engine) i have the below hard coded script to execute the code without custom meta type data **
 
 Step 1: Download the Code (5 Apex Classes and 1 Custom Meta Type).
