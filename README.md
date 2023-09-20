@@ -10,8 +10,9 @@ Step 2: Upload all files to a dev org. <br>
 Step 3: Excute the below script to view the output in developer console debug window <br>
 
 ///Script to execute the rule engine. <br>
-List<RuleInfo> ruleList = new List<RuleInfo>();
-        PersonWrapper personObj = new PersonWrapper(715, 'Florida');     
+
+        List<RuleInfo> ruleList = new List<RuleInfo>();
+        PersonWrapper personObj = new PersonWrapper(715, 'Florida');
         productWrapper productObj = new ProductWrapper(5.0,true,'7-1 ARM');
         
         RuleInfo ruleInfo = new RuleInfo();
@@ -57,15 +58,19 @@ List<RuleInfo> ruleList = new List<RuleInfo>();
         ruleInfo.ResultOperator = '+';
         ruleInfo.ResultValue = '0.5';        
         ruleList.add(ruleInfo);
+        
+        productObj = RulesEngine.eval(ruleList,personObj,productObj);
+        system.debug('productObj:::closing:::' + productObj); 
 
-productObj = RulesEngine.eval(ruleList,personObj,productObj);
-system.debug('productObj:::closing:::' + productObj);
 
+Screen shot of the execution window.
 
 ![image](https://github.com/hemakgit/VisioFinancialServices/assets/90020641/6ee4f82e-0903-4f2b-b2b9-47f89bd111e3)
 
 Step 4: Execute Apex Test class for rule engine 
 Class Name : RulesEngineTest.cls
+
+Screen shot of the test class run result. <br>
 
 ![image](https://github.com/hemakgit/VisioFinancialServices/assets/90020641/db7f9555-ef82-4446-a88a-ac54c157c185)
 
