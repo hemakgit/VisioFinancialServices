@@ -16,7 +16,7 @@
     </values>
     <values>
         <field>ResultValue__c</field>
-        <value xsi:type="xsd:string">false</value>
+        <value xsi:type="xsd:string">true</value>
     </values>
     <values>
         <field>RuleFieldName__c</field>
@@ -33,5 +33,9 @@
     <values>
         <field>RuleValue__c</field>
         <value xsi:type="xsd:string">Florida</value>
+    </values>
+    <values>
+        <field>SortOrder__c</field>
+        <value xsi:type="xsd:double">1.0</value>
     </values>
 </CustomMetadata>

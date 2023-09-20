@@ -34,4 +34,8 @@
         <field>RuleValue__c</field>
         <value xsi:type="xsd:string">720</value>
     </values>
+    <values>
+        <field>SortOrder__c</field>
+        <value xsi:type="xsd:double">3.0</value>
+    </values>
 </CustomMetadata>
