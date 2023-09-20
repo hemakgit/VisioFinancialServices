@@ -3,14 +3,13 @@
 # Instructions
 
 1. Actual Idea is to store all Rules in Custom Meta Type in Salesforce, Which will allow users to add \ change configuration. (I have added a commented section on how it will be with Custom meta data).
-2. Just for our easy execution of the code (rule engine) i have the below script with all rules directly mapped to rule object 
-**# Please follow the below listed steps to execute the code #**
+2. Just for our easy execution of the code (rule engine) i have the below script with all rules directly mapped to rule object , **Please follow the below listed steps to execute the code**.
 
-Step 1: Download the Code (5 Apex Classes and 1 Custom Meta Type).
-Step 2: Upload all files to a dev org.
-Step 3: Excute the below script to view the output in developer console debug window
+Step 1: Download the Code (5 Apex Classes and 1 Custom Meta Type). <br>
+Step 2: Upload all files to a dev org. <br>
+Step 3: Excute the below script to view the output in developer console debug window <br>
 
-///Script to execute the rule engine.
+///Script to execute the rule engine. <br>
 List<RuleInfo> ruleList = new List<RuleInfo>();
         PersonWrapper personObj = new PersonWrapper(715, 'Florida');     
         productWrapper productObj = new ProductWrapper(5.0,true,'7-1 ARM');
